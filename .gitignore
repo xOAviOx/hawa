@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+
+# Downloaded/copied at install time by scripts/setup-assets.mjs — not committed.
+public/models/*.task
+public/mediapipe/

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#080b0f" />
+    <meta
+      name="description"
+      content="Play music in the air with your hands — a webcam instrument that runs entirely in your browser."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23080b0f'/%3E%3Cpath d='M6 20c4-10 6 6 10-4s6 8 10-2' stroke='%235fe3c8' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <title>HAWA — play music in the air</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- The whole app is a single canvas stage plus DOM overlays. -->
+    <div id="app">
+      <canvas id="stage"></canvas>
+
+      <!-- Fixed film-grain texture so surfaces don't feel sterile/flat. -->
+      <div class="grain" aria-hidden="true"></div>
+
+      <!-- Debug overlay (toggle with D). -->
+      <div id="debug" class="debug hidden"></div>
+
+      <!-- Tap-to-start gate: audio + camera both need a user gesture. -->
+      <div id="start-screen" class="start-screen">
+        <div class="start-card">
+          <h1 class="start-title">HAWA</h1>
+          <p class="start-sub">play music in the air with your hands</p>
+          <button id="start-btn" class="start-btn">Tap to start</button>
+          <p id="start-status" class="start-status"></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
