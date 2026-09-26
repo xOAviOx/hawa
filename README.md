@@ -1,4 +1,4 @@
-# HAWA — play music in the air with your hands 🎵✋
+# HAWA — play music in the air with your hands 
 
 Turn your webcam into a musical instrument. Move your hands in front of the
 camera to play melodies, hold chords, run drones, and bang out drums — with a
