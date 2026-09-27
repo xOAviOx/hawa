@@ -1,0 +1,10 @@
+# Normalize line endings: check out with LF, store LF in the repo.
+* text=auto eol=lf
+
+# Binary assets — never touch.
+*.task binary
+*.wasm binary
+*.png binary
+*.jpg binary
+*.mp3 binary
+*.mp4 binary
